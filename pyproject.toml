@@ -1,0 +1,22 @@
+[project]
+name = "audiobook-generator"
+version = "0.1.0"
+dependencies = [
+    "numpy == 1.26.4",
+    "structlog == 22.1.0",
+    "requests==2.25.1",
+    "tensorflow==2.19.0",
+    "streamlit==0.76.0",
+    "google_api_python_client==1.12.8",
+    "protobuf==5.29.5"
+]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+disallow_untyped_defs = true
+
+[build-system]
+requires = ["setuptools==69"]
+build-backend = "setuptools.build_meta"
+
